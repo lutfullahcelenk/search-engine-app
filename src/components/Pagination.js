@@ -9,6 +9,7 @@ const Pagination = ({paginate,output,cardPerPage}) => {
 
     for(let i = 1; i <= Math.ceil(output.length / cardPerPage); i++){
         pageNumbers.push(i)
+        
     }
 
 
