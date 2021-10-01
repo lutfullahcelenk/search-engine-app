@@ -6,11 +6,9 @@ import Card from "./Card";
 
 const Form = () => {
   const { text,output,setText } = useContext(engineContext);
-
-  // Search Bar Optimization
-
   
 
+  // Search Bar Optimization
   const handleClick = (e) => {
     e.preventDefault();
     if (!text) {

@@ -6,16 +6,22 @@ import AddPage from "./pages/AddPage";
 import ResultPage from "./pages/ResultPage";
 import initialStates from "./store/initialStates";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {toast} from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+
 
 const App = () => {
   const [data, setData] = useState(initialStates);
   const [text, setText] = useState("");
   // console.log(data)
+  toast.configure();
 
   //Add Record
   const AddRecord = (record) => {
     const finalData = [...data, record];
     setData(finalData);
+    toast(`${record[0]} is Added...`,{position: toast.POSITION.BOTTOM_RIGHT});
   };
 
   // The Outputs
