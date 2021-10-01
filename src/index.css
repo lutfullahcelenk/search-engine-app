@@ -24,7 +24,8 @@ body{
   cursor: pointer;
 }
 
-.searchinput:hover{
+.searchinput:hover,
+.form-control:hover{
   background: linear-gradient(to bottom right, #212529 , gray);
   color: white;
 }
