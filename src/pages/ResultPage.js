@@ -6,8 +6,9 @@ import { engineContext } from "../context/engineContext";
 import { useContext } from "react";
 
 const ResultPage = () => {
-  const { output, handleAlphabetic, handleDate } = useContext(engineContext);
+  const { output, handleAlphabetic, handleDate, sortedValue } = useContext(engineContext);
 
+  console.log(sortedValue)
   const history = useHistory();
   const goMain = () => {
     history.push("/");
@@ -20,7 +21,7 @@ const ResultPage = () => {
 
   const indexOfLastCard = currentPage * cardPerPage;
   const indexofFirstCard = indexOfLastCard - cardPerPage;
-  const currentCards = output.slice(indexofFirstCard, indexOfLastCard);
+  const currentCards = sortedValue.slice(indexofFirstCard, indexOfLastCard);
   //   console.log(currentCards);
 
   const paginate = (pageNumber) => {
@@ -57,7 +58,7 @@ const ResultPage = () => {
               href="#"
               onClick={() => handleAlphabetic(output)}
             >
-              Aphabetic
+              Alphabetic
             </button>
             <button
               className="dropdown-item btn h5"
