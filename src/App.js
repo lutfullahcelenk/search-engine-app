@@ -14,6 +14,13 @@ import "react-toastify/dist/ReactToastify.css";
 const App = () => {
   const [data, setData] = useState(initialStates);
   const [text, setText] = useState("");
+  const [sortedValue, setSortedValue] = useState(initialStates.filter((val) => {
+    if (text === "") {
+      return null;
+    } else if (val[0].toLowerCase().includes(text.toLowerCase())) {
+      return val;
+    }
+  }))
   // console.log(data)
   toast.configure();
 
@@ -25,6 +32,9 @@ const App = () => {
   };
 
   // The Outputs
+  
+
+  
   const output = data.filter((val) => {
     if (text === "") {
       return null;
@@ -33,9 +43,11 @@ const App = () => {
     }
   });
 
+
   // Sorting
   const handleAlphabetic = (output) => {
-    output.sort();
+    output.sort()
+    setSortedValue(output)
   };
 
   const handleDate = (output) => {
@@ -46,7 +58,10 @@ const App = () => {
         .join()
         .localeCompare(a[3].split("/").reverse().join())
     );
+    setSortedValue(output)
   };
+
+  
 
   return (
     <Router>
@@ -56,6 +71,7 @@ const App = () => {
           AddRecord,
           text,
           output,
+          sortedValue,
           setText,
           handleAlphabetic,
           handleDate,
