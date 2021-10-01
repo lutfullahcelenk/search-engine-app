@@ -50,7 +50,7 @@ const AddPage = () => {
       </button>
       <form className="addpage w-md-50 text-light mt-5" onSubmit={handleAdd}>
         <div className="form-group mt-3">
-          <label htmlFor="namesurname" className="h5 text-danger">
+          <label htmlFor="namesurname" className="h4 text-primary fs-3">
             Name Surname
           </label>
           <input
@@ -64,7 +64,7 @@ const AddPage = () => {
           />
         </div>
         <div className="form-group mt-3">
-          <label htmlFor="country" className="h5 text-danger">
+          <label htmlFor="country" className="h4 text-primary fs-3">
             Country
           </label>
           <input
@@ -80,7 +80,7 @@ const AddPage = () => {
           />
         </div>
         <div className="form-group mt-3">
-          <label htmlFor="city" className="h5 text-danger">
+          <label htmlFor="city" className="h4 text-primary fs-3">
             City
           </label>
           <input
@@ -96,7 +96,7 @@ const AddPage = () => {
           />
         </div>
         <div className="form-group mt-3">
-          <label for="email" className="h5 text-danger">
+          <label for="email" className="h4 text-primary fs-3">
             Email
           </label>
           <input
