@@ -11,12 +11,10 @@ Project aims to create a Search Engine Application.
 ## Project Skeleton
 
 
-Search Engine App (folder)
+007 - Search Engine App (folder)
 |
-|----readme.md   
-
+|----readme.md         
 SOLUTION
-
 ├── public
 │     └── index.html
 ├── src
@@ -51,6 +49,7 @@ SOLUTION
 │    └── index.css
 ├── package.json
 └── yarn.lock
+
 
 ## Objective
 
