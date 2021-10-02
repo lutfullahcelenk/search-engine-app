@@ -1,18 +1,17 @@
-# Project: Search Engine App 
+# ProjectName : Search Engine
 
 ## Description
 
-Project aims to create a Search Engine App.
+Project aims to create a Search Engine Application.
 
 ## Problem Statement
 
-- I add a new project to our portfolios. I used React, Redux and Hooks...
+- I add a new project to my portfolio. I used React, Context Api, Bootstrap and Hooks...
 
 ## Project Skeleton
 
-```` 
 
-search-engine-app (folder)
+007 - Trello Clone (folder)
 |
 |----readme.md         
 SOLUTION
@@ -20,7 +19,7 @@ SOLUTION
 │     └── index.html
 ├── src
 │    ├── components
-│    │       ├── Cards.js
+│    │       ├── Card.js
 │    │       │     
 │    │       ├── Form.js
 │    │       │
@@ -29,22 +28,27 @@ SOLUTION
 │    │       └── Pagination.js
 |    |        
 │    ├── store
-│    │       ├── initialState.js
+│    │       ├── initialStates.js
 |    |
-│    ├── pages
-│    │       ├── AddPage.js
-│    │       │     
-│    │       ├── MainPage.js
-│    │       │
-     │       ├──ResultPage.js
+│    ├── context
+│    │       ├── engineContext.js
+│    │   
+|    ├── pages
+│    │       ├── Addpage.js  
+|    |       |      
+│    │       ├── MainPage.js 
+|    |       |
+│    │       ├── ResultPage.js 
+|    |
+│    ├── assets
+│    │       ├── tesodevLogo.png
+|    |
 │    ├── App.js
 │    ├── App.css
 │    ├── index.js
 │    └── index.css
 ├── package.json
 └── yarn.lock
-```
-
 
 ## Objective
 
@@ -60,30 +64,33 @@ Build a Search Engine App using ReactJS.
 
 - ReactJS
 
-- Redux, ContextAPI
+- Context Api
 
 - Bootstrap
 
-### At the end of the project, I have gone on;
-
-- improving coding skills within HTML & CSS & JS & ReactJS.
-
-- using git commands (push, pull, commit, add etc.) and Github as Version Control System.
 
 ## Steps to Solution
 
-- Step 1: Create React App using `npx create-react-app task-tracker`
+- Step 1: I Created React App using `npx create-react-app task-tracker`
 
-- Step 2 : Install `"react-icons"` package to your `package.json` for icons.
+- Step 2 :Installed `"react-icons"` package to your `package.json` for icons.
 
-- Step 3: Build Search Engine App.
+- Step 3: Build Search Engine Application.
 
-- Step 4: You can use CSS frameworks like Bootstrap, Semantic UI, Material UI. I used Booststrap4.
+- Step 4: I used CSS frameworks Bootstrap for styling.
 
-- Step 5: Pushed my application into my own public repo on Github
-
-- Step 6: Add Demo View to my project and README.md file.
+- Step 5: Finally i pushed my application into my public repo on Github
 
 
+## Notes
 
-**<p align="center">&#9786; Happy Coding &#9997;</p>**
+-  I also used React Toastify for toasts
+
+-  I got fonts from google-fonts and some icons from font-awesome
+
+## A SHORT VIEW OF APPLICATON
+
+<img src="https://media.giphy.com/media/1iE94cYnxCM6DPzECx/giphy.gif" width="800" height="400m" />
+
+
+*<p align="center">&#9786; Happy Coding &#9997;</p>*
