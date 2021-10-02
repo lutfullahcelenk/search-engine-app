@@ -48,7 +48,7 @@ const AddPage = () => {
       >
         <i className="fas fa-arrow-left"></i> Return To Main Page
       </button>
-      <form className="addpage w-md-50 text-light mt-5" onSubmit={handleAdd}>
+      <form className="addpage w-md-50  text-light mt-5" onSubmit={handleAdd}>
         <div className="form-group mt-3">
           <label htmlFor="namesurname" className="h4 text-primary fs-3">
             Name Surname
