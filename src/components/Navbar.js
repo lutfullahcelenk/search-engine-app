@@ -24,7 +24,7 @@ const Navbar = () => {
             <ul className="p-3 navbar-nav ml-auto">
               <li className="nav-item active">
                 <a className="nav-link scroll-link" title="MainPage" href="#">
-                  <i className="fas fa-home m-2"> </i> AnaSayfa
+                  <i className="fas fa-home m-2"> </i> Main Page
                 </a>
               </li>
               <li className="nav-item">
@@ -35,7 +35,7 @@ const Navbar = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <i className="fa fa-user m-2"> </i> Hakkımda
+                  <i className="fa fa-user m-2"> </i> About Me
                 </a>
               </li>
 
