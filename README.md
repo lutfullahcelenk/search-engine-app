@@ -11,10 +11,12 @@ Project aims to create a Search Engine Application.
 ## Project Skeleton
 
 
-007 - Trello Clone (folder)
+Search Engine App (folder)
 |
-|----readme.md         
+|----readme.md   
+
 SOLUTION
+
 ├── public
 │     └── index.html
 ├── src
